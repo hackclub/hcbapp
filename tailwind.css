@@ -1,0 +1,33 @@
+.mt-10 {
+  margin-top: 2.5rem
+}
+
+.hidden {
+  display: none
+}
+
+.text-center {
+  text-align: center
+}
+
+.text-\[20px\] {
+  font-size: 20px
+}
+
+.text-\[30px\] {
+  font-size: 30px
+}
+
+.font-extrabold {
+  font-weight: 800
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity))
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity))
+}
