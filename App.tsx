@@ -1,7 +1,7 @@
 import { SafeAreaView, View } from "react-native";
 import { TailwindProvider } from "tailwind-rn";
 import utilities from "./tailwind.json";
-import HomeScreen from "./screens/HomeScreen";
+import SigIn from "./screens/SigIn";
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
     <TailwindProvider utilities={utilities}>
       <SafeAreaView>
         <View>
-          <HomeScreen />
+          <SigIn />
         </View>
       </SafeAreaView>
     </TailwindProvider>

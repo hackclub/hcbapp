@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "bankapp",
-    "slug": "bankapp",
+    "name": "Hack Club Bank",
+    "slug": "Hack Club Bank",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
