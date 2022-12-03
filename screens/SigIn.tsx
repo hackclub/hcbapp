@@ -39,6 +39,7 @@ const SigIn = () => {
             </View>
           </View>
           <Pressable
+            onPress={() => {}}
             style={tw("mt-5 bg-[#338EDA] ml-[70px] mr-[70px] rounded-[8px]")}
           >
             <Text
