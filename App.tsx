@@ -1,6 +1,6 @@
 import { SafeAreaView, View } from "react-native";
 import { TailwindProvider } from "tailwind-rn";
-import EmailCodeVerification from "./screens/EmailCodeVerification";
+import SigIn from "./screens/SigIn";
 import utilities from "./tailwind.json";
 
 
@@ -10,7 +10,7 @@ export default function App() {
     <TailwindProvider utilities={utilities}>
       <SafeAreaView>
         <View>
-         <EmailCodeVerification />
+        <SigIn />
         </View>
       </SafeAreaView>
     </TailwindProvider>
