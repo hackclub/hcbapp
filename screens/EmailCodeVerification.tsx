@@ -17,21 +17,11 @@ const EmailCodeVerification = () => {
   const codeArray = new Array(maxlength).fill(0);
   const [logincode, setLoginCode] = useState("");
 
-  
-
-  const [inputFocus, setInputFocus] = useState(false)
+  const [inputFocus, setInputFocus] = useState(false);
 
   const CodeDigitInput = (values: any, index: any) => {
     const emptyInputChar = "";
     const digit = logincode[index] || emptyInputChar;
-
-    const isDigit = index === logincode.length
-    const lastDigit = index === maxlength -1;
-  const codeLimit = logincode.length === maxlength;
-
-  const Focus =  isDigit  || (lastDigit && codeLimit);
-
-  //const CodeInput = inputFocus && isDigit ? Focus: digit;
 
     return (
       <View
@@ -52,7 +42,7 @@ const EmailCodeVerification = () => {
 
   const handleOnSubmitEditing = () => {
     setInputFocus(false);
-  }
+  };
   return (
     <SafeAreaView style={tw("mt-10")}>
       <View>
@@ -80,18 +70,19 @@ const EmailCodeVerification = () => {
                 style={tw("flex flex-row mt-3")}
               >
                 {codeArray.map(CodeDigitInput)}
+
+                <TextInput
+                  style={tw("absolute text-center opacity-0 py-3 ml-2 w-[20%]")}
+                  keyboardType="number-pad"
+                  returnKeyType="done"
+                  textContentType="oneTimeCode"
+                  ref={textInputRef}
+                  maxLength={maxlength}
+                  value={logincode}
+                  onChangeText={setLoginCode}
+                  onSubmitEditing={handleOnSubmitEditing}
+                />
               </View>
-              <TextInput
-                style={tw("absolute w-[1px] h-[1px] opacity-0")}
-                keyboardType="number-pad"
-                returnKeyType="done"
-                textContentType="oneTimeCode"
-                ref={textInputRef}
-                maxLength={maxlength}
-                value={logincode}
-                onChangeText={setLoginCode}
-                onSubmitEditing={handleOnSubmitEditing}
-              />
               <Text
                 style={tw(
                   "text-center text-[18px] font-medium text-[#686666] mt-5"
