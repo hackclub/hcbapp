@@ -1,0 +1,40 @@
+name: iOS
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  
+      
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+     - name: Checkout repository
+       uses: actions/checkout@v3
+     
+     - name: Install pnpm
+       uses: pnpm/action-setup@v2.2.2
+       with:
+        version: 7.x.x
+
+     - name: Install Node
+       uses: actions/setup-node@v3
+       with:
+        node-version: 18
+        cache: 'pnpm'
+
+     - name: Install dependencies
+       run: pnpm i
+     
+     - name: Start Expo server
+       run: pnpm start
+
+
+
