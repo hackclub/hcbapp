@@ -34,7 +34,7 @@ jobs:
        run: pnpm i
      
      - name: Start Expo server
-       run: pnpm start
+       run: pnpm ios
 
 
 
