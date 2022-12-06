@@ -20,6 +20,6 @@ Contributions are much appreciated!
 
 If you would like to contribute, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file first.
 
-##❓Help
+## ❓Help
 
 If you have any issues, or questions regarding the app. Feel free to join the `#bankapp-dev` channel on the Hack Club [Slack](https://slack.hackclub.com).
