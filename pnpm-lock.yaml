@@ -34,7 +34,10 @@ devDependencies:
   '@types/react-native': 0.70.7
   concurrently: 7.6.0
   postcss: 8.4.19
+<<<<<<< HEAD
   rome: 11.0.0
+=======
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
   tailwindcss: 3.2.4_postcss@8.4.19
   typescript: 4.9.3
 
@@ -1732,7 +1735,11 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
+<<<<<<< HEAD
       '@types/node': 18.11.11
+=======
+      '@types/node': 18.11.10
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
       '@types/yargs': 15.0.14
       chalk: 4.1.2
     dev: false
@@ -1743,7 +1750,11 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
+<<<<<<< HEAD
       '@types/node': 18.11.11
+=======
+      '@types/node': 18.11.10
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
       '@types/yargs': 16.0.4
       chalk: 4.1.2
     dev: false
@@ -1755,8 +1766,13 @@ packages:
       '@jest/schemas': 29.0.0
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
+<<<<<<< HEAD
       '@types/node': 18.11.11
       '@types/yargs': 17.0.16
+=======
+      '@types/node': 18.11.10
+      '@types/yargs': 17.0.15
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
       chalk: 4.1.2
     dev: false
 
@@ -2062,6 +2078,7 @@ packages:
     resolution: {integrity: sha512-K0aGNn1TjalKj+65D7ycc1//H9roAQ51GJVk5ZJQFb2teECGmzd86bYDC0aYdbRf7gtovescq4Zt6FR0tgXiHQ==}
     dev: false
 
+<<<<<<< HEAD
   /@rometools/cli-darwin-arm64/11.0.0:
     resolution: {integrity: sha512-F3vkdY+s3FLIEnAjSbyHTuIPB88cLpccimW4ecid5I7S6GzGG3iUJI4xT00JhH73K4P/qW20/9r+kH1T9Du8Xg==}
     cpu: [arm64]
@@ -2110,6 +2127,8 @@ packages:
     dev: true
     optional: true
 
+=======
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
   /@segment/loosely-validate-event/2.0.0:
     resolution: {integrity: sha512-ZMCSfztDBqwotkl848ODgVcAmN4OItEWDCkshcKz0/W6gGSQayuuCtWV/MlodFivAZD793d6UgANd6wCXUfrIw==}
     dependencies:
@@ -2155,8 +2174,13 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: false
 
+<<<<<<< HEAD
   /@types/node/18.11.11:
     resolution: {integrity: sha512-KJ021B1nlQUBLopzZmPBVuGU9un7WJd/W4ya7Ih02B4Uwky5Nja0yGYav2EfYIk0RR2Q9oVhf60S2XR1BCWJ2g==}
+=======
+  /@types/node/18.11.10:
+    resolution: {integrity: sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==}
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
     dev: false
 
   /@types/normalize-package-data/2.4.1:
@@ -2201,8 +2225,13 @@ packages:
       '@types/yargs-parser': 21.0.0
     dev: false
 
+<<<<<<< HEAD
   /@types/yargs/17.0.16:
     resolution: {integrity: sha512-Mh3OP0oh8X7O7F9m5AplC+XHYLBWuPKNkGVD3gIZFLFebBnuFI2Nz5Sf8WLvwGxECJ8YjifQvFdh79ubODkdug==}
+=======
+  /@types/yargs/17.0.15:
+    resolution: {integrity: sha512-ZHc4W2dnEQPfhn06TBEdWaiUHEZAocYaiVMfwOipY5jcJt/251wVrKCBWBetGZWO5CF8tdb7L3DmdxVlZ2BOIg==}
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
     dependencies:
       '@types/yargs-parser': 21.0.0
     dev: false
@@ -3193,8 +3222,13 @@ packages:
     engines: {node: '>=0.11'}
     dev: true
 
+<<<<<<< HEAD
   /dayjs/1.11.7:
     resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+=======
+  /dayjs/1.11.6:
+    resolution: {integrity: sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==}
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
     dev: false
 
   /debug/2.6.9:
@@ -4440,7 +4474,11 @@ packages:
     resolution: {integrity: sha512-jZCyo6iIxO1aqUxpuBlwTDMkzOAJS4a3eYz3YzgxxVQFwLeSA7Jfq5cbqCY+JLvTDrWirgusI/0KwxKMgrdf7w==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
+<<<<<<< HEAD
       '@types/node': 18.11.11
+=======
+      '@types/node': 18.11.10
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
       graceful-fs: 4.2.10
     dev: false
 
@@ -4449,7 +4487,11 @@ packages:
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@jest/types': 27.5.1
+<<<<<<< HEAD
       '@types/node': 18.11.11
+=======
+      '@types/node': 18.11.10
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
       chalk: 4.1.2
       ci-info: 3.7.0
       graceful-fs: 4.2.10
@@ -4472,7 +4514,11 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
+<<<<<<< HEAD
       '@types/node': 18.11.11
+=======
+      '@types/node': 18.11.10
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: false
@@ -4716,7 +4762,11 @@ packages:
     hasBin: true
     dependencies:
       ansi-fragments: 0.2.1
+<<<<<<< HEAD
       dayjs: 1.11.7
+=======
+      dayjs: 1.11.6
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
       yargs: 15.4.1
     dev: false
 
@@ -6305,6 +6355,7 @@ packages:
       glob: 7.2.3
     dev: false
 
+<<<<<<< HEAD
   /rome/11.0.0:
     resolution: {integrity: sha512-rRo6JOwpMLc3OkeTDRXkrmrDqnxDvZ75GS4f0jLDBNmRgDXWbu0F8eVnJoRn+VbK2AE7vWvhVOMBjnWowcopkQ==}
     engines: {node: '>=14.*'}
@@ -6319,6 +6370,8 @@ packages:
       '@rometools/cli-win32-x64': 11.0.0
     dev: true
 
+=======
+>>>>>>> 0031c11493b3bb4d930b7769cd1e9a173ec3614f
   /run-parallel/1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
