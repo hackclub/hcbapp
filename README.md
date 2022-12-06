@@ -2,6 +2,8 @@
 
 # 💸 Bank App 
 [![iOS](https://github.com/anddddrew/bankapp/actions/workflows/ios.yml/badge.svg)](https://github.com/anddddrew/bankapp/actions/workflows/ios.yml)
+[![format](https://github.com/hackclub/bankapp/actions/workflows/format.yml/badge.svg)](https://github.com/hackclub/bankapp/actions/workflows/format.yml)
+
 
 This is [Hack Club Bank](https://bank.hackclub.com) but a mobile version of it. This allows people to easily use & manage Bank on the go.
 
