@@ -18,9 +18,13 @@ jobs:
      - name: Checkout repository
        uses: actions/checkout@v3
      
-      - name: Install apt-get
-        run: |
-        sudo apt-get update && sudo apt-get install -y apt-utils
+    - name: Install apt-get
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y apt-utils
+
+    - name: Install sudo
+      run: sudo apt-get install -y sudo
 
      - name: Install npm
        run: |
