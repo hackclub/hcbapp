@@ -14,8 +14,8 @@ jobs:
    - name: Checkout
      uses: actions/checkout@v3
 
-   - name: Install pnpm
-     uses: pnpm/action-setup@v2.2.2
+   - name: Install yarn
+     uses: yarn/action-setup@v2.2.2
      with:
         version: 7.x.x
 
@@ -25,7 +25,7 @@ jobs:
       node-version: 18
   
    - name: Install deps
-     run: pnpm i
+     run: yarn i
 
    - name: Run rome 
-     run: pnpm rome format --write .
+     run: yarn rome format --write .
