@@ -8,11 +8,11 @@
 This is [Hack Club Bank](https://bank.hackclub.com) but a mobile version of it. This allows people to easily use & manage Bank on the go.
 
 ## 🚀 Getting started
-1. Download pnpm: https://pnpm.io
+1. Download yarn: https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable
 2. Clone the repository: `git clone https://github.com/hackclub/bankapp.git`
-3. Install depenedncies: `pnpm i`
-4. Run: `pnpm run dev:tailwind`
-5. Run: `pnpm start` (**In a seperate terminal session**)
+3. Install depenedncies: `yarn i`
+4. Run: `yarn run dev:tailwind`
+5. Run: `yarn start` (**In a seperate terminal session**)
 
 ## 👥 Contributing
 
