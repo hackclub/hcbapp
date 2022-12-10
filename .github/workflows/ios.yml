@@ -19,9 +19,9 @@ jobs:
        uses: actions/checkout@v3
      
      - name: Install npm
-       uses: actions/npm@v3
-       with:
-         version: 7.x.x
+       run: |
+         curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+         sudo apt-get install -y nodejs
 
      - name: Install Node
        uses: actions/setup-node@v3
@@ -31,6 +31,9 @@ jobs:
 
      - name: Install dependencies
        run: npm ci
-     
+
+     - name: Run rome
+       run: npm run rome format --write .
+
      - name: Start Expo server
        run: npm run ios

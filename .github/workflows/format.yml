@@ -14,10 +14,10 @@ jobs:
    - name: Checkout
      uses: actions/checkout@v3
 
-   - name: Install npm
-       uses: actions/npm@v3
-       with:
-         version: 7.x.x
+     - name: Install npm
+       run: |
+         curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+         sudo apt-get install -y nodejs
          
    - name: Install Node.js
      uses: actions/setup-node@v3
