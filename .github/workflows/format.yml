@@ -14,6 +14,9 @@ jobs:
    - name: Checkout
      uses: actions/checkout@v3
 
+      - name: Install apt-get
+        run: sudo apt-get update && sudo apt-get install -y apt-utils
+
      - name: Install npm
        run: |
          curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
