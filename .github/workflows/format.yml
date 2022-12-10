@@ -15,9 +15,9 @@ jobs:
      uses: actions/checkout@v3
 
    - name: Install npm
-     uses: npm/action-setup@v2.2.2
-     with:
-        version: 7.x.x
+    run: |
+        curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+        sudo apt-get install -y nodejs
 
    - name: Install Node.js
      uses: actions/setup-node@v3
