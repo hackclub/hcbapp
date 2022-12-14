@@ -1,5 +1,21 @@
+.static {
+  position: static
+}
+
+.fixed {
+  position: fixed
+}
+
 .absolute {
   position: absolute
+}
+
+.relative {
+  position: relative
+}
+
+.mt-5 {
+  margin-top: 1.25rem
 }
 
 .ml-2 {
@@ -22,10 +38,6 @@
   margin-top: 0.5rem
 }
 
-.mt-5 {
-  margin-top: 1.25rem
-}
-
 .mt-3 {
   margin-top: 0.75rem
 }
@@ -40,6 +52,10 @@
 
 .mt-\[64px\] {
   margin-top: 64px
+}
+
+.inline {
+  display: inline
 }
 
 .flex {
@@ -66,12 +82,16 @@
   justify-content: center
 }
 
+.rounded-\[8px\] {
+  border-radius: 8px
+}
+
 .rounded-\[3px\] {
   border-radius: 3px
 }
 
-.rounded-\[8px\] {
-  border-radius: 8px
+.rounded-full {
+  border-radius: 9999px
 }
 
 .border {
@@ -88,19 +108,29 @@
   border-color: rgb(212 210 210 / var(--tw-border-opacity))
 }
 
+.bg-\[\#33d6a6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 214 166 / var(--tw-bg-opacity))
+}
+
 .bg-\[\#338EDA\] {
   --tw-bg-opacity: 1;
   background-color: rgb(51 142 218 / var(--tw-bg-opacity))
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity))
 }
 
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem
 }
 
 .py-3 {
@@ -113,8 +143,37 @@
   padding-bottom: 0.5rem
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem
+}
+
+.pl-\[70px\] {
+  padding-left: 70px
+}
+
+.pr-\[70px\] {
+  padding-right: 70px
+}
+
 .pl-2 {
   padding-left: 0.5rem
+}
+
+.pl-\[20px\] {
+  padding-left: 20px
+}
+
+.pr-\[20px\] {
+  padding-right: 20px
+}
+
+.pr-\[10px\] {
+  padding-right: 10px
+}
+
+.pr-2 {
+  padding-right: 0.5rem
 }
 
 .text-center {
@@ -125,12 +184,12 @@
   font-size: 42px
 }
 
-.text-\[18px\] {
-  font-size: 18px
-}
-
 .text-\[20px\] {
   font-size: 20px
+}
+
+.text-\[18px\] {
+  font-size: 18px
 }
 
 .text-\[24px\] {
@@ -145,6 +204,10 @@
   font-size: 19px
 }
 
+.font-bold {
+  font-weight: 700
+}
+
 .font-extrabold {
   font-weight: 800
 }
@@ -157,8 +220,12 @@
   font-weight: 600
 }
 
-.font-bold {
-  font-weight: 700
+.uppercase {
+  text-transform: uppercase
+}
+
+.capitalize {
+  text-transform: capitalize
 }
 
 .text-red-500 {
