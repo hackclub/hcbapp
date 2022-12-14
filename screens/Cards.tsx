@@ -9,8 +9,8 @@ const Cards = () => {
 
   return (
     <SafeAreaView>
-      <View style={tw("mt-5 px-5")}>
-        <View style={tw("flex-row items-center gap-5")}>
+      <View style={tw("mt-5 px-5  border-b border-[#e0e6ed] pb-3")}>
+        <View style={tw("flex-row items-center")}>
           <Text style={tw("text-[42px] font-bold")}>Cards</Text>
           <Text
             style={tw(

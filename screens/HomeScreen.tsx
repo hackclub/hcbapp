@@ -2,10 +2,10 @@ import { View, Text, SafeAreaView, Image } from "react-native";
 import React from "react";
 import { useTailwind } from "tailwind-rn";
 
-const HomeScreen = () => {
+const HomeScreen = ({}) => {
 	const tw = useTailwind();
 	return (
-		<SafeAreaView>
+		<SafeAreaView >
 			<View style={tw("mt-10")}>
 				<Text
 					style={tw("text-center text-[24px] font-extrabold text-[#686666]")}
