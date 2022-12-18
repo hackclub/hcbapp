@@ -22,9 +22,11 @@ const Cards = () => {
         </View>
         <Pressable
           onPress={() => {}}
-          style={tw("mt-5 bg-[#33d6a6] pl-[20px] pr-[20px] rounded-[8px] py-4")}
+          style={tw("mt-5 bg-black pl-[20px] pr-[20px] rounded-[8px] py-3")}
         >
-          <Text style={tw("font-bold text-[20px]")}>Order a card </Text>
+          <Text style={tw("text-[20px] text-white text-center ")}>
+            Add to Wallet{" "}
+          </Text>
         </Pressable>
       </View>
     </SafeAreaView>

@@ -15,7 +15,7 @@ const Recipts = () => {
           <Text style={tw("text-[42px] font-bold px-5")}>Recipts</Text>
           <Text
             style={tw(
-              "font-bold ml-2 text-[20px] bg-black text-white pl-2 pr-2 rounded-full"
+              "font-bold text-[20px] bg-black text-white pl-2 pr-2 rounded-full"
             )}
           >
             {recipts}

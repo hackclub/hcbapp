@@ -1,30 +1,40 @@
-import { View, Text } from "react-native";
-import React from "react";
+import { View, Text, SafeAreaView, Pressable, Switch } from "react-native";
+import React, { useState } from "react";
 import { useTailwind } from "tailwind-rn";
-import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import General from "./SettingsScreen/General";
-import Previews from "./SettingsScreen/Previews";
-import Security from "./SettingsScreen/Security";
-
-const Tab = createMaterialTopTabNavigator();
 
 const Setting = () => {
   const tw = useTailwind();
+  const [isEnabled, setIsEnabled] = useState(false);
+  const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
   return (
-    <Tab.Navigator
-      screenOptions={{
-        tabBarActiveTintColor: "#EC3750",
-        tabBarInactiveTintColor: "gray",
-        tabBarLabelStyle: { fontSize: 14 },
-        tabBarIndicatorStyle: {
-          backgroundColor: "#EC3750",
-        },
-      }}
-    >
-      <Tab.Screen name="General" component={General} />
-      <Tab.Screen name="Previews" component={Previews} />
-      <Tab.Screen name="Security" component={Security} />
-    </Tab.Navigator>
+    <SafeAreaView>
+      <View style={tw("mt-5 px-5")}>
+        <View style={tw("flex flex-row items-center mt-5 justify-between w-[95%]")}>
+          <Pressable>
+            <Text style={tw("text-[18px]")}>Dark Mode</Text>
+          </Pressable>
+
+          <Switch
+            trackColor={{ false: "#767577", true: "#81b0ff" }}
+            thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+            ios_backgroundColor="#3e3e3e"
+            onValueChange={toggleSwitch}
+            value={isEnabled}
+          />
+        </View>
+        <Pressable style={tw("mt-5")}>
+          <Text style={tw("text-[18px]")}>ChangeLogs</Text>
+        </Pressable>
+
+        <Pressable style={tw("mt-10")}>
+          <Text style={tw("text-[18px]")}>Notifications</Text>
+        </Pressable>
+
+        <Pressable style={tw("mt-10")}>
+          <Text style={tw("text-[18px]")}>Logout</Text>
+        </Pressable>
+      </View>
+    </SafeAreaView>
   );
 };
 
