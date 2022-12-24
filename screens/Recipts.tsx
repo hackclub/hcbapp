@@ -7,12 +7,12 @@ const Recipts = () => {
 
   const [recipts] = useState(0);
   return (
-    <SafeAreaView>
+    <SafeAreaView style={tw("mt-5")}>
       <View style={tw("mt-5")}>
         <View
-          style={tw("flex-row items-center border-b border-[#e0e6ed] pb-3")}
+          style={tw("flex-row items-center pb-3")}
         >
-          <Text style={tw("text-[42px] font-bold px-5")}>Recipts</Text>
+          <Text style={tw("text-[36px] font-bold px-5")}>Recipts</Text>
           <Text
             style={tw(
               "font-bold text-[20px] bg-black text-white pl-2 pr-2 rounded-full"

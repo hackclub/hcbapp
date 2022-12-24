@@ -4,12 +4,10 @@ import HomeScreen from "./screens/HomeScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Cards from "./screens/Cards";
 import Recipts from "./screens/Recipts";
-import Settings from "./screens/Setting";
 import utilities from "./tailwind.json";
 import { NavigationContainer } from "@react-navigation/native";
 
 const Tab = createBottomTabNavigator();
-
 
 const App = () => {
   return (
@@ -18,6 +16,7 @@ const App = () => {
       <NavigationContainer>
         <Tab.Navigator
           screenOptions={{
+            headerShown: false,
             headerTitleAlign: "center",
             tabBarActiveTintColor: "#EC3750",
             tabBarInactiveTintColor: "gray",
@@ -27,7 +26,6 @@ const App = () => {
           <Tab.Screen name="Home" component={HomeScreen} />
           <Tab.Screen name="Cards" component={Cards} />
           <Tab.Screen name="Recipts" component={Recipts} />
-          <Tab.Screen name="Settings" component={Settings} />
         </Tab.Navigator>
       </NavigationContainer>
     </TailwindProvider>
