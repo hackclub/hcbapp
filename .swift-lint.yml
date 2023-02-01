@@ -1,8 +1,0 @@
-enabled_rules:
-  - trailing_semicolon
-  - vertical_whitespace
-  - no_trailing_whitespace
-  - trailing_newline
-
-excluded:
-  - Pods
