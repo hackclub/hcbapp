@@ -11,11 +11,16 @@ struct ContentView: View {
     @State private var emailAddress = ""
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "globe") // place holder for bank image
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("LOGIN IN TO")
-            Text("HacK Club Bank")
+            Text("LOGIN IN TO").bold()
+                .font(.title)
+                .frame(width: 200)
+            Text("Hack Club Bank").bold()
+            .font(.largeTitle)
+            .frame(width: 300)
+            .foregroundColor(.red)
             TextField("Enter Your Email", text: $emailAddress)
                 .textFieldStyle(.roundedBorder)
                 .padding()
