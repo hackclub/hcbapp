@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var emailAddress = ""
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("LOGIN IN TO")
+            Text("HacK Club Bank")
+            TextField("Enter Your Email", text: $emailAddress)
+                .textFieldStyle(.roundedBorder)
+                .padding()
+            
+            Button("Continue") {
+                print("Hack Club Bank")
+            }
+            .buttonStyle(.bordered)
+            .tint(.blue)
         }
         .padding()
     }
